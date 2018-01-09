@@ -1,284 +1,288 @@
 <html>
 
-	<head>
-		<meta charset="UTF-8">
-		
-	</head>
-	<body onload="bullShit()" >
- 
-		<center>
+<head>
+	<meta charset="UTF-8">
 
-		<br><br><br>
-		
-		 <font size="30" face="verdana">Marketing Bullshit Generator</font> 
-		
-		
+</head>
+
+<body onload="bullShit()">
+
+	<center>
+
+		<br>
+		<br>
+		<br>
+
+		<font size="30" face="verdana">Marketing Bullshit Generator</font>
+
+
 		<h2 style="border:3px; border-style:solid; border-color:#FF0000; padding: 1em;">
-		<font face="verdana" color="blue">
-		
-		<p id = "greeting">Hier könnte dein Blödsinn stehen!</p>
-		
-		<p id = "text1"></p>
-		<p id = "text2"></p>
-		<p id = "text3"></p>
-		
-		<p id = "end"></p>
-		
+			<font face="verdana" color="blue">
+
+				<p id="greeting">Hier könnte dein Blödsinn stehen!</p>
+
+				<p id="text1"></p>
+				<p id="text2"></p>
+				<p id="text3"></p>
+
+				<p id="end"></p>
+
 		</h2>
 		</font>
-		
-		
-		 <button id = "button" onclick="bullShit()">Click to generate BS</button> 
 
-		</center>
+
+		<button id="button" onclick="bullShit()">Click to generate BS</button>
+
+	</center>
 
 	<script>
-		function bullShit(){
-		
+		function bullShit() {
+
 			var greeting = ["Du Lurch!",
-							"Hello",
-							"Ciao",
-							"Oink Oink!",
-							"Was geht, Alter!",
-							"Dobro Utro","Hossa??",
-							"Allerliebster",
-							"Also jetzt hör mir mal genau zu!",
-							"Carpe Diem","Du Morgenmuffel",
-							"Du Grossmeister",
-							"Grüezi",
-							"Eure Majestät",
-							"Hallo Freund",
-							"Ey Alter",
-							"Hallo Eure Herrlichkeit",
-							"Hi Digger",
-							"Na, alter Sack!",
-							"Salutti",
-							"Servus",
-							"Tagchen",
-							"yo yo yo",
-							"Mein Teuerster",
-							"Du Arsch",
-							"Verehrter Herr",
-							"Tach auch",
-							"Mahlzeit",
-							"Du alter Seeräuber",
-							"Hallo mein Saufbruder",
-							"Aloha",
-							"Rülps!",
-							"Na du Gurke",
-							"Was willst du?",
-							"Schalom, Bruder",
-							"Liebe Brüder und Schwestern",
-							"Liebe Gemeinde",
-							"Verehrte Damen und Herren",
-							"Liebe Leute",
-							"So höret meine Worte",
-							"Höret das Wort Gottes",
-							"In der Bibel steht geschrieben",
-							"Im Buck Mose steht",
-							"Holla!",
-							]
-			var randomGreeting = Math.floor(Math.random() * 40)  
-			
+				"Hello",
+				"Ciao",
+				"Oink Oink!",
+				"Was geht, Alter!",
+				"Dobro Utro", "Hossa??",
+				"Allerliebster",
+				"Also jetzt hör mir mal genau zu!",
+				"Carpe Diem", "Du Morgenmuffel",
+				"Du Grossmeister",
+				"Grüezi",
+				"Eure Majestät",
+				"Hallo Freund",
+				"Ey Alter",
+				"Hallo Eure Herrlichkeit",
+				"Hi Digger",
+				"Na, alter Sack!",
+				"Salutti",
+				"Servus",
+				"Tagchen",
+				"yo yo yo",
+				"Mein Teuerster",
+				"Du Arsch",
+				"Verehrter Herr",
+				"Tach auch",
+				"Mahlzeit",
+				"Du alter Seeräuber",
+				"Hallo mein Saufbruder",
+				"Aloha",
+				"Rülps!",
+				"Na du Gurke",
+				"Was willst du?",
+				"Schalom, Bruder",
+				"Liebe Brüder und Schwestern",
+				"Liebe Gemeinde",
+				"Verehrte Damen und Herren",
+				"Liebe Leute",
+				"So höret meine Worte",
+				"Höret das Wort Gottes",
+				"In der Bibel steht geschrieben",
+				"Im Buck Mose steht",
+				"Holla!",
+			]
+			var randomGreeting = Math.floor(Math.random() * 40)
+
 			var text1 = ["Wir sind stets bemüht, die Qualität unserer Produkte weiter zu verbessern",
-						"Wir haben nur Pre­mium Traf­fic!", 
-						"Ich freue mich auf span­nende Gesprä­che", 
-						"Das ist kein Bug, das ist ein Feature.", 
-						"Wir suchen einen Affiliate, der SEM für uns umsetzt.", 
-						"Wir bringen insgesamt 30 Jahre Erfahrung im Marketing mit.", 
-						"Unser selbstentwickelter Algorithmus findet definitiv alle relevanten Nutzer und statistischen Zwillinge.", 
-						"We are the world’s leading online (Video, DSP, Affiliate for xy or from xy…) advertising platform.", 
-						"Brand Advertising ist eine übergeordnete Funnel Aktivität", 
-						"Wir brauchen sehr gute Konditionen für die Testkampagne.", 
-						"Unser Motto ist ganz klar: Mobile First.", 
-						"Wir müssen die Relationship mit dem Stakeholder verbessern", 
-						"Added Value, Downpricing oder Brand Polish? Das ist hier die Frage", 
-						"Warum sollen Leute unser Produkt eigentlich kaufen? Weiß das hier jemand?", 
-						"Bullshitten Sie von mir aus wie Sie wollen. Aber lassen Sie Shakespeare da raus.", 
-						"Wir müssen die Challenge annehmen: Gut ist nie gut genug!", 
-						"Motivierte sind motiviert, weil sie motiviert wurden.", 
-						"Lasst uns doch erstmal aufhören, schlecht zu sein.", 
-						"Clearen Sie bitte asap die Target Audience, der Fit passt noch nicht", 
-						"Für wen ist dieses Produkt eigentlich?", 
-						"Thomas hat den Lead. Wenn er fein damit ist, sind wir agreed.", 
-						"Wir müssen die Abschiedstoleranz im Team liften", 
-						"Lunch is for Losers", 
-						"Das ist nicht darstellbar", 
-						"Lassen Sie uns ergebnisorientierter arbeiten.", 
-						"Das ist nur ein Denkanstoß", 
-						"Sie müssen sichtbarer werden", 
-						"Das ist eben kein Nine to Five Job",
-						"Ich weiß nicht, ob ich das rechtzeitig gegreenlighted kriege",
-						"Vom Learning her habe ich einiges mitgenommen",
-						"Wir müssen auch mal die Extrameile gehen",
-						"Nice wäre es, wenn Sie quick und easy die Kundenumfrage im Mail Anhang ausfüllen könnten",
-						"Quality Mismatches bei Onsite Locations müssen wir permanent monitoren",
-						"Wir müssen die Leute mit ins Boot holen",
-						"Wir müssen die Leute abholen",
-						"Da bin ich ganz bei dir/Ihnen",
-						"Da sind wir gut unterwegs",
-						"Kein Thema!",
-						"Das habe ich auf dem Schirm",
-						"Ich bin im Moment lost",
-						"Da müssen wir Geld in die Hand nehmen",
-						"Das stimmen wir bilateral ab.",
-						"Roundabout klingt ungefähr Scheiße",
-						"Da werden Pflöcke gesetzt",
-						"Ich schicke Ihnen mal einen Draft",
-						"Da können wir Honig saugen",
-						"Das ist kein Hexenwerk",
-						"Umgekehrt wird ein Schuh draus.",
-						"Wir sind not amused",
-						"Das ist so 1990",
-						"Ein absolutes No Go!",
-						"Ein absolutes Must Have!",
-						"Wir sollten dazu eine kurze TelKo machen.",
-						"Wir sind hier doch nicht bei Wünsch dir was!",
-						"Sind Sie morgen früh im Office?",
-						"Das ist kein Dealbreaker",
-						"Darauf haben wir uns committed",
-						"Für Fragen stehe ich Ihnen gerne zur Verfügung.",
-						"Wir sollten das nicht mit der Gießkanne verteilen",
-						"Wir können da noch Synergien heben",
-						"Wir sollten das zeitnah erledigen",
-						"Ich schick Ihnen das mal kommentarlos zu",
-						"Wir müssen das proaktiv kommunizieren",
-						"Nachhaltige Maßnahmen!!",
-						"Das ist eine Blaupause",
-						"Da haben wir ein Gap",
-						"An welcher Stelle ist das Bottleneck?",
-						"Wir werden das ergebnisoffen diskutieren.",
-						"Das ist ein Lösungsorientierter Ansatz",
-						"Da müssen wir noch mal gegentreten",
-						"Wir müssen das von allen Seiten beleuchten",
-						"Das lief völlig geräuschlos.",
-						"Können wir das umshiften?",
-						"Wann ist das Kick-Off?",
-						"Das machen wir hands on",
-						"Was sind die quick wins?",
-						"Das ist so Mainstream",
-						"Was sind dabei die painpoints?",
-						"Das Projekt ist ongoing",
-						"Das ist eine Operation am offenen Herzen",
-						"Wir müssen die Kuh zum fliegen bringen",
-						"Das ist nicht skalierter",
-						"Welchen Ampelstatus hat das Projekt?",
-						"Ich habe das auf dem Radar.",
-						"Einen Tod müssen wir sterben",
-						"Wir haben den nächsten Meilenstein erreicht",
-						"Das quantifizieren wir per Augenintegral",
-						"Also normalerweise gibt es bei uns keine Zählabweichungen",
-						"Wenn der CPO stimmt ist unser Marketing-Budget unendlich",
-						"Für ein höheres Pricing bekommen wir eine bessere Reichweite.",
-						"Ein Reporting ist bei SEO generell nicht üblich, da die wirklich wirksamen Maßnahmen natürlich streng geheim sind",
-						"Seit meinem Praktikum bei Rocket Internet in Malaysia bin ich als Online Marketing Evangelist tätig",
-						"Die Abonnenten unseres exklusiven Newsletter-Verteilers haben alle ein Double-Opt-In gegeben.",
-						"Wir sind da extrem analytisch unterwegs.",
-						"Wir sind Top-Dingens des Jahres!",
-						"Aktion wegen großer Nachfrage verlängert!",
-						"Wer auf andere Leute wirken will, der muss erst einmal in ihrer Sprache mit ihnen reden.",
-						"Wenn ich Hundefutter verkaufen will, muß ich erst einmal die Rolle des Hundes übernehmen",
-						"Die besten Ideen kommen mir, wenn ich mir vorstelle, ich bin mein eigener Kunde.",
-						"Wer nicht neugierig ist, erfährt nichts.",
-						"Wer sich des Fragens schämt, der schämt sich des Lernens.",
-						"Wenn uns die Zielgruppe nicht versteht, dann ist sie nicht unsere Zielgruppe.",
-						"Das Feedback der Kunden ist manchmal schmerzhaft, aber immer gut.",
-						"Wir kaufen nicht, was wir haben wollen, wir konsumieren, was wir sein möchten.",
-						"Sagt den Leuten nicht, wie gut ihr die Güter macht, sagt ihnen, wie gut eure Güter sie machen. ",
-						"Kein Kunde kauft jemals ein Erzeugnis. Er kauft immer das, was das Erzeugnis für ihn leistet.",
-						"Der Mensch ist ja nicht der, der er ist, sondern der, der er sein will.",
-						"Eigentlich kaufen auch wir Erwachsenen immer wieder nur Kinderspielzeuge.",
-						"Die Leute wissen nicht, was Sie wollen, bis man es ihnen anbietet",
-						"Wer keine Probleme löst, darf sich nicht wundern, dass sich keiner für das Angebot interessiert.",
-						"Für angenehme Erinnerungen muss man im Voraus sorgen.",
-						"Man kann einen Menschen nur überzeugen, wenn man ihn liebt.",
-						"Wer allzu klug ist, findet keine Freunde.",
-						"Service heißt, das ganze Geschäft mit den Augen des Kunden zu sehen.",
-						"Um der Konkurrenz vorauszusein, müssen ihn mit Ihrer Leistung begeistern.",
-						"Meine Generation erwartet, dass sich die Medien ihnen anpassen.",
-						"lle Angestellten müssen so gut sein, dass ich meine Mutter zu ihnen schicken möchte.",
-						"Es gilt nicht mehr: Geiz ist geil, sondern: Mehrwert ist geil.",
-						"Qualität bedeutet, der Kunde kommt zurück, nicht die Ware.",
-						"Der Wettbewerb der Werte wird wichtiger als der Wettbewerb der Preise.",
-						"Schwache Marken machen Kundenwerbung, für starke Marken machen Kunden Werbung.",
-						"Unsere Kunden sind die beste Werbung.",
-						"Moderne Markenführung heißt: Netzwerke und herrsche!",
-						"Marketing muss so anziehend sein, dass uns die Leute in ihrem Leben haben wollen.",
-						"Sorgen Sie dafür, dass Ihre Kunden auf Sie zu kommen.",
-						"Wer nicht automatisch neue Kunden gewinnt, ist falsch positioniert.",
-						"Eleganz heisst nicht, ins Auge zu fallen, sondern im Gedächtnis zu bleiben.",
-						"Mit einer guten Verpackung wickelt man nicht nur die Ware ein, sondern auch den Käufer.",
-						"Ich mache kein Marketing; ich mache, was mir gefällt und gehe davon aus, es gefällt auch Anderen.",
-						"Ich brauche kein Marketing, ich stehe jeden Tag im Geschäft.",
-						"In sozialen Netzwerken will man kommunizieren, nicht Kühlschränke kaufen",
-						"Zu niemandem ist man ehrlicher als zum Suchfeld von Google",
-						"Neue Technologie allein ist noch kein neuer Umsatz",
-						"Ein Werbetext ist dann ein guter Werbetext, wenn er an etwas erinnert, nicht nur an sich selber.",
-						"Es geht um die Inhalte!",
-						"Die Sprache ist unsere zweite Luft.",
-						"Die Werbung begann vor 1,5 Milliarden Jahren mit den Prokaryonten, die als erste auf unserem Planeten Sexuallockstoffe ausstiessen.",
-						"Gute Werbung ist wie ein guter Caipirinha",
-						"Werbung ist die Kunst, auf den Kopf zu zielen und die Brieftasche zu treffen.",
-						"Werbung ist teuer, keine Werbung ist noch teurer.",
-						"Wer aufhört zu werben, um so Geld zu sparen, kann ebenso seine Uhr anhalten, um Zeit zu sparen.",
-						"Wir sind Weltmarktführer!",
-						"Ich glaube, kreative Werbung macht allen mehr Freude.",
-						"Eine gute Werbung muss wie eine gute Predigt sein!",
-						"Werbung machen bedeutet die Fähigkeit, den reinen Pulsschlag des Unternehmens zu spüren",
-						"Telefonieren Sie mit uns, oder rufen Sie uns an!",
-						"Der Kunde ist nicht mehr König, er ist Diktator.",
-						"Es gibt drei Arten von Werbung. Laute, lautere und unlautere.",
-						"Die Meinungsforschung beruht auf der irrigen Annahme, dass die Leute überhaupt eine Meinung haben.",
-						"Durch meine langjährige Erfahrung biete ich effektive Hilfe zur Selbsthilfe.",
-						]
+				"Wir haben nur Pre­mium Traf­fic!",
+				"Ich freue mich auf span­nende Gesprä­che",
+				"Das ist kein Bug, das ist ein Feature.",
+				"Wir suchen einen Affiliate, der SEM für uns umsetzt.",
+				"Wir bringen insgesamt 30 Jahre Erfahrung im Marketing mit.",
+				"Unser selbstentwickelter Algorithmus findet definitiv alle relevanten Nutzer und statistischen Zwillinge.",
+				"We are the world’s leading online (Video, DSP, Affiliate for xy or from xy…) advertising platform.",
+				"Brand Advertising ist eine übergeordnete Funnel Aktivität",
+				"Wir brauchen sehr gute Konditionen für die Testkampagne.",
+				"Unser Motto ist ganz klar: Mobile First.",
+				"Wir müssen die Relationship mit dem Stakeholder verbessern",
+				"Added Value, Downpricing oder Brand Polish? Das ist hier die Frage",
+				"Warum sollen Leute unser Produkt eigentlich kaufen? Weiß das hier jemand?",
+				"Bullshitten Sie von mir aus wie Sie wollen. Aber lassen Sie Shakespeare da raus.",
+				"Wir müssen die Challenge annehmen: Gut ist nie gut genug!",
+				"Motivierte sind motiviert, weil sie motiviert wurden.",
+				"Lasst uns doch erstmal aufhören, schlecht zu sein.",
+				"Clearen Sie bitte asap die Target Audience, der Fit passt noch nicht",
+				"Für wen ist dieses Produkt eigentlich?",
+				"Thomas hat den Lead. Wenn er fein damit ist, sind wir agreed.",
+				"Wir müssen die Abschiedstoleranz im Team liften",
+				"Lunch is for Losers",
+				"Das ist nicht darstellbar",
+				"Lassen Sie uns ergebnisorientierter arbeiten.",
+				"Das ist nur ein Denkanstoß",
+				"Sie müssen sichtbarer werden",
+				"Das ist eben kein Nine to Five Job",
+				"Ich weiß nicht, ob ich das rechtzeitig gegreenlighted kriege",
+				"Vom Learning her habe ich einiges mitgenommen",
+				"Wir müssen auch mal die Extrameile gehen",
+				"Nice wäre es, wenn Sie quick und easy die Kundenumfrage im Mail Anhang ausfüllen könnten",
+				"Quality Mismatches bei Onsite Locations müssen wir permanent monitoren",
+				"Wir müssen die Leute mit ins Boot holen",
+				"Wir müssen die Leute abholen",
+				"Da bin ich ganz bei dir/Ihnen",
+				"Da sind wir gut unterwegs",
+				"Kein Thema!",
+				"Das habe ich auf dem Schirm",
+				"Ich bin im Moment lost",
+				"Da müssen wir Geld in die Hand nehmen",
+				"Das stimmen wir bilateral ab.",
+				"Roundabout klingt ungefähr Scheiße",
+				"Da werden Pflöcke gesetzt",
+				"Ich schicke Ihnen mal einen Draft",
+				"Da können wir Honig saugen",
+				"Das ist kein Hexenwerk",
+				"Umgekehrt wird ein Schuh draus.",
+				"Wir sind not amused",
+				"Das ist so 1990",
+				"Ein absolutes No Go!",
+				"Ein absolutes Must Have!",
+				"Wir sollten dazu eine kurze TelKo machen.",
+				"Wir sind hier doch nicht bei Wünsch dir was!",
+				"Sind Sie morgen früh im Office?",
+				"Das ist kein Dealbreaker",
+				"Darauf haben wir uns committed",
+				"Für Fragen stehe ich Ihnen gerne zur Verfügung.",
+				"Wir sollten das nicht mit der Gießkanne verteilen",
+				"Wir können da noch Synergien heben",
+				"Wir sollten das zeitnah erledigen",
+				"Ich schick Ihnen das mal kommentarlos zu",
+				"Wir müssen das proaktiv kommunizieren",
+				"Nachhaltige Maßnahmen!!",
+				"Das ist eine Blaupause",
+				"Da haben wir ein Gap",
+				"An welcher Stelle ist das Bottleneck?",
+				"Wir werden das ergebnisoffen diskutieren.",
+				"Das ist ein Lösungsorientierter Ansatz",
+				"Da müssen wir noch mal gegentreten",
+				"Wir müssen das von allen Seiten beleuchten",
+				"Das lief völlig geräuschlos.",
+				"Können wir das umshiften?",
+				"Wann ist das Kick-Off?",
+				"Das machen wir hands on",
+				"Was sind die quick wins?",
+				"Das ist so Mainstream",
+				"Was sind dabei die painpoints?",
+				"Das Projekt ist ongoing",
+				"Das ist eine Operation am offenen Herzen",
+				"Wir müssen die Kuh zum fliegen bringen",
+				"Das ist nicht skalierter",
+				"Welchen Ampelstatus hat das Projekt?",
+				"Ich habe das auf dem Radar.",
+				"Einen Tod müssen wir sterben",
+				"Wir haben den nächsten Meilenstein erreicht",
+				"Das quantifizieren wir per Augenintegral",
+				"Also normalerweise gibt es bei uns keine Zählabweichungen",
+				"Wenn der CPO stimmt ist unser Marketing-Budget unendlich",
+				"Für ein höheres Pricing bekommen wir eine bessere Reichweite.",
+				"Ein Reporting ist bei SEO generell nicht üblich, da die wirklich wirksamen Maßnahmen natürlich streng geheim sind",
+				"Seit meinem Praktikum bei Rocket Internet in Malaysia bin ich als Online Marketing Evangelist tätig",
+				"Die Abonnenten unseres exklusiven Newsletter-Verteilers haben alle ein Double-Opt-In gegeben.",
+				"Wir sind da extrem analytisch unterwegs.",
+				"Wir sind Top-Dingens des Jahres!",
+				"Aktion wegen großer Nachfrage verlängert!",
+				"Wer auf andere Leute wirken will, der muss erst einmal in ihrer Sprache mit ihnen reden.",
+				"Wenn ich Hundefutter verkaufen will, muß ich erst einmal die Rolle des Hundes übernehmen",
+				"Die besten Ideen kommen mir, wenn ich mir vorstelle, ich bin mein eigener Kunde.",
+				"Wer nicht neugierig ist, erfährt nichts.",
+				"Wer sich des Fragens schämt, der schämt sich des Lernens.",
+				"Wenn uns die Zielgruppe nicht versteht, dann ist sie nicht unsere Zielgruppe.",
+				"Das Feedback der Kunden ist manchmal schmerzhaft, aber immer gut.",
+				"Wir kaufen nicht, was wir haben wollen, wir konsumieren, was wir sein möchten.",
+				"Sagt den Leuten nicht, wie gut ihr die Güter macht, sagt ihnen, wie gut eure Güter sie machen. ",
+				"Kein Kunde kauft jemals ein Erzeugnis. Er kauft immer das, was das Erzeugnis für ihn leistet.",
+				"Der Mensch ist ja nicht der, der er ist, sondern der, der er sein will.",
+				"Eigentlich kaufen auch wir Erwachsenen immer wieder nur Kinderspielzeuge.",
+				"Die Leute wissen nicht, was Sie wollen, bis man es ihnen anbietet",
+				"Wer keine Probleme löst, darf sich nicht wundern, dass sich keiner für das Angebot interessiert.",
+				"Für angenehme Erinnerungen muss man im Voraus sorgen.",
+				"Man kann einen Menschen nur überzeugen, wenn man ihn liebt.",
+				"Wer allzu klug ist, findet keine Freunde.",
+				"Service heißt, das ganze Geschäft mit den Augen des Kunden zu sehen.",
+				"Um der Konkurrenz vorauszusein, müssen ihn mit Ihrer Leistung begeistern.",
+				"Meine Generation erwartet, dass sich die Medien ihnen anpassen.",
+				"lle Angestellten müssen so gut sein, dass ich meine Mutter zu ihnen schicken möchte.",
+				"Es gilt nicht mehr: Geiz ist geil, sondern: Mehrwert ist geil.",
+				"Qualität bedeutet, der Kunde kommt zurück, nicht die Ware.",
+				"Der Wettbewerb der Werte wird wichtiger als der Wettbewerb der Preise.",
+				"Schwache Marken machen Kundenwerbung, für starke Marken machen Kunden Werbung.",
+				"Unsere Kunden sind die beste Werbung.",
+				"Moderne Markenführung heißt: Netzwerke und herrsche!",
+				"Marketing muss so anziehend sein, dass uns die Leute in ihrem Leben haben wollen.",
+				"Sorgen Sie dafür, dass Ihre Kunden auf Sie zu kommen.",
+				"Wer nicht automatisch neue Kunden gewinnt, ist falsch positioniert.",
+				"Eleganz heisst nicht, ins Auge zu fallen, sondern im Gedächtnis zu bleiben.",
+				"Mit einer guten Verpackung wickelt man nicht nur die Ware ein, sondern auch den Käufer.",
+				"Ich mache kein Marketing; ich mache, was mir gefällt und gehe davon aus, es gefällt auch Anderen.",
+				"Ich brauche kein Marketing, ich stehe jeden Tag im Geschäft.",
+				"In sozialen Netzwerken will man kommunizieren, nicht Kühlschränke kaufen",
+				"Zu niemandem ist man ehrlicher als zum Suchfeld von Google",
+				"Neue Technologie allein ist noch kein neuer Umsatz",
+				"Ein Werbetext ist dann ein guter Werbetext, wenn er an etwas erinnert, nicht nur an sich selber.",
+				"Es geht um die Inhalte!",
+				"Die Sprache ist unsere zweite Luft.",
+				"Die Werbung begann vor 1,5 Milliarden Jahren mit den Prokaryonten, die als erste auf unserem Planeten Sexuallockstoffe ausstiessen.",
+				"Gute Werbung ist wie ein guter Caipirinha",
+				"Werbung ist die Kunst, auf den Kopf zu zielen und die Brieftasche zu treffen.",
+				"Werbung ist teuer, keine Werbung ist noch teurer.",
+				"Wer aufhört zu werben, um so Geld zu sparen, kann ebenso seine Uhr anhalten, um Zeit zu sparen.",
+				"Wir sind Weltmarktführer!",
+				"Ich glaube, kreative Werbung macht allen mehr Freude.",
+				"Eine gute Werbung muss wie eine gute Predigt sein!",
+				"Werbung machen bedeutet die Fähigkeit, den reinen Pulsschlag des Unternehmens zu spüren",
+				"Telefonieren Sie mit uns, oder rufen Sie uns an!",
+				"Der Kunde ist nicht mehr König, er ist Diktator.",
+				"Es gibt drei Arten von Werbung. Laute, lautere und unlautere.",
+				"Die Meinungsforschung beruht auf der irrigen Annahme, dass die Leute überhaupt eine Meinung haben.",
+				"Durch meine langjährige Erfahrung biete ich effektive Hilfe zur Selbsthilfe.",
+			]
 			var randomText1 = Math.floor(Math.random() * 85)
 			var randomText2 = 86 + Math.floor(Math.random() * 61)
-			var randomText3 = 86 +Math.floor(Math.random() * 61)
+			var randomText3 = 86 + Math.floor(Math.random() * 61)
 
 			var end = ["Auf Widerhören",
-						"Ciao",
-						"Adele",
-						"Auf Wiedertschüss",
-						"Aus die Maus",
-						"Bis Baldrian",
-						"Bis dannimannski",
-						"Bis Danzig",
-						"Bis denn, Sven",
-						"Bis Denver",
-						"Bis später, Attentäter",
-						"Bis später, Peter",
-						"Ende Gelände",
-						"Erst die Rechte, dann die Linke. Beide machen winke, winke.",
-						"Geh mit Gott. Aber geh.",
-						"Ich mach mich mal vom Acker.",
-						"Ich verabscheue mich.",
-						"See you later, alligator.",
-						"Wir riechen uns.",
-						"Tschüssikowski",
-						"Wir verbleiben mit freundlichen Grüssen",
-						"Auf Wiedersehen!",
-						"Bis morgen.",
-						"Catch you later",
-						"Peace out! ",
-						"Take it easy",
-						"Fuck off",
-						"Trööt",]
-			var randomEnd = Math.floor(Math.random() * 26) 			
-		
+				"Ciao",
+				"Adele",
+				"Auf Wiedertschüss",
+				"Aus die Maus",
+				"Bis Baldrian",
+				"Bis dannimannski",
+				"Bis Danzig",
+				"Bis denn, Sven",
+				"Bis Denver",
+				"Bis später, Attentäter",
+				"Bis später, Peter",
+				"Ende Gelände",
+				"Erst die Rechte, dann die Linke. Beide machen winke, winke.",
+				"Geh mit Gott. Aber geh.",
+				"Ich mach mich mal vom Acker.",
+				"Ich verabscheue mich.",
+				"See you later, alligator.",
+				"Wir riechen uns.",
+				"Tschüssikowski",
+				"Wir verbleiben mit freundlichen Grüssen",
+				"Auf Wiedersehen!",
+				"Bis morgen.",
+				"Catch you later",
+				"Peace out! ",
+				"Take it easy",
+				"Fuck off",
+				"Trööt",]
+			var randomEnd = Math.floor(Math.random() * 26)
+
 			document.getElementById("greeting").innerHTML = greeting[randomGreeting];
-			
+
 			document.getElementById("text1").innerHTML = text1[randomText1];
-			
+
 			document.getElementById("text2").innerHTML = text1[randomText2];
-			
+
 			//document.getElementById("text3").innerHTML = text1[randomText3];
-			
+
 			document.getElementById("end").innerHTML = end[randomEnd];
 
-			
+
 		}
 
 	</script>
 
-	</body>
+</body>
+
 </html>
