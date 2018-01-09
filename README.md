@@ -1,8 +1,9 @@
 # marketing-bullshit-generator
 A Marketing Bullshit Generator in German
 
-It is done in pure HTM and Javascript.
+It is done in pure HTML and Javascript.
 
-You can change the Arrays with your own text!
+Since it was for a joke in german, the text it displays is german.
 
-The rest of the code is in english, it's pretty easy logic.
+The code however, is in english, for your convenience, so it's easier to customize.
+
